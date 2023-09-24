@@ -47,7 +47,7 @@ export default function Partner() {
     <div className="p-20  text-4xl flex flex-col gap-10 font-semibold">
       <div>
         <h1>
-          <span className="text-gold font-medium">Member</span> of
+          <span className="text-gold font-semibold">Member</span> of
         </h1>
         <div className="flex flex-row gap-5 items-center flex-wrap   justify-between">
           {member.map((item, index) => {
@@ -64,7 +64,7 @@ export default function Partner() {
       </div>
       <div className="mt-10">
         <h1>
-          <span className="text-gold font-medium">Partner</span> of
+          <span className="text-gold font-semibold">Partner</span> of
         </h1>
         <div className="flex flex-row flex-wrap gap-5 items-center justify-between">
           {partner.map((item, index) => {

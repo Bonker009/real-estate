@@ -46,14 +46,13 @@ export default function Number() {
           }
         }
 
-     
         if (allNumbersReachedFinal) {
           clearInterval(interval);
         }
 
         return updatedNumbers;
       });
-    }, 20); 
+    }, 20);
   }, []);
 
   return (

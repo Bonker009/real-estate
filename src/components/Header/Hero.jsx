@@ -56,7 +56,7 @@ export default function Hero() {
 
       <div className="w-2/4 text-center">
         <h5 className="mb-5 text-5xl">
-          <span className="text-gold">The Number 1</span> in Real Estate
+          <span className="text-gold font-semibold">The Number 1</span> in Real Estate
           Investment Opportunities
         </h5>
         <button className="uppercase rounded-sm border-0 p-3 bg-gold font-semibold">

@@ -71,6 +71,9 @@ export default function Property() {
               alt="property"
               className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-500 ease-in-out"
             />
+            <div className="z-40 absolute top-8 text-white right-[-9rem] rotate-45 bg-gold p-2 w-96 font-semibold">
+              Coming Soon
+            </div>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 group-hover:opacity-50 transition-opacity duration-300 ease-in-out"></div>
             <figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-80 text-white p-10 transform translate-y-100 group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
               <h3 className="text-4xl font-semibold">
@@ -88,6 +91,9 @@ export default function Property() {
               alt="property"
               className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-500 ease-in-out"
             />
+            <div className=" z-40 absolute top-8 text-white right-[-9rem] rotate-45 bg-gold p-2 w-96 font-semibold">
+              Coming Soon
+            </div>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 group-hover:opacity-50 transition-opacity duration-300 ease-in-out"></div>
             <figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-80 text-white p-10 transform translate-y-100 group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
               <h3 className="text-4xl font-semibold">
