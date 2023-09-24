@@ -33,7 +33,6 @@ export default function Number() {
       university: 1,
     };
 
-    // Initialize the interval for counting up
     const interval = setInterval(() => {
       setNumbers((prevNumbers) => {
         // Check if any number has reached its final value
@@ -47,14 +46,14 @@ export default function Number() {
           }
         }
 
-        // If all numbers have reached their final values, clear the interval
+     
         if (allNumbersReachedFinal) {
           clearInterval(interval);
         }
 
         return updatedNumbers;
       });
-    }, 20); // Adjust the interval duration for smoother animation
+    }, 20); 
   }, []);
 
   return (
