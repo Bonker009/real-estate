@@ -1,4 +1,4 @@
-import logo from "../assets/images/f_logo.png";
+import logo from "../../assets/images/f_logo.png"
 import Number from "./Number";
 export default function Feature() {
   return (
@@ -15,8 +15,10 @@ export default function Feature() {
         Strategic Realty Investment Co., Ltd is focussing on growth, strategic
         development, and contribution to innovative development in Cambodia.
       </p>
-      <p className=" text-stone-800 mt-5">Strategic Realty Investment in Numbers</p>
-      <Number/>
+      <p className=" text-stone-800 mt-5">
+        Strategic Realty Investment in Numbers
+      </p>
+      <Number />
     </section>
   );
 }
