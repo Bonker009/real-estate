@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function Report(props) {
   return (
-    <figure className="relative group flex flex-col items-center gap-4 bg-white overflow-hidden transition-shadow duration-700 ease-in-out hover:shadow-[0_45px_60px_15px_rgba(0,0,0,0.3)] shadow-black rounded-md cursor-pointer">
+    <figure className="relative group z-0 flex flex-col items-center gap-4 bg-white overflow-hidden transition-shadow duration-700 ease-in-out hover:shadow-[0_45px_60px_15px_rgba(0,0,0,0.3)] shadow-black rounded-md cursor-pointer">
       <img
         className="h-80 object-cover w-full transition-scale duration-300 ease-in-out hover:scale-105 rounded-md"
         src={props.image}

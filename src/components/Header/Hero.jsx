@@ -26,8 +26,8 @@ export default function Hero() {
     setCurIndex(resetIndex);
   };
 
-  const transitionDuration = 1000; 
-  const autoSlideInterval =3000;
+  const transitionDuration = 1000;
+  const autoSlideInterval = 3000;
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -45,19 +45,22 @@ export default function Hero() {
         transition: `opacity ${transitionDuration}ms ease-in-out`, // Apply fade transition to opacity
       }}
     >
-      {/* left arrow */}
-      <div className="hidden  sm:group-hover:block absolute top-[50%] left-5 rounded-full p-2 cursor-pointer">
-        <BsChevronLeft onClick={prevSlide} className="text-7xl text-white" />
-      </div>
-      {/* right arrow */}
-      <div className="hidden sm:group-hover:block absolute top-[50%] right-5 rounded-full p-2 cursor-pointer">
-        <BsChevronRight onClick={nextSlide} className="text-7xl text-white" />
+      <div className="flex justify-between w-full px-5">
+        {/* left arrow */}
+        <div className="hidden sm:group-hover:block rounded-full p-2 cursor-pointer">
+          <BsChevronLeft onClick={prevSlide} className="text-7xl text-white" />
+        </div>
+
+        {/* right arrow */}
+        <div className="hidden sm:group-hover:block rounded-full p-2 cursor-pointer">
+          <BsChevronRight onClick={nextSlide} className="text-7xl text-white" />
+        </div>
       </div>
 
       <div className="w-2/4 text-center">
         <h5 className="mb-5 text-5xl">
-          <span className="text-gold font-semibold">The Number 1</span> in Real Estate
-          Investment Opportunities
+          <span className="text-gold font-semibold">The Number 1</span> in Real
+          Estate Investment Opportunities
         </h5>
         <button className="uppercase rounded-sm border-0 p-3 bg-gold font-semibold">
           our Projects
