@@ -1,5 +1,6 @@
 import logo from "../../assets/images/f_logo.png";
 import ham from "../../assets/images/icon/hamburger.png";
+import { Link,  } from "react-router-dom";
 import { useState } from "react";
 
 function HeaderCarousel() {
@@ -10,8 +11,8 @@ function HeaderCarousel() {
   }
 
   const menuStyle = {
-    width: isOpen ? "50%" : "0", // Adjust the width based on your needs
-    height: isOpen ? "100%" : "0", // Adjust the height based on your needs
+    width: isOpen ? "50%" : "0",
+    height: isOpen ? "100%" : "0",
   };
 
   return (
@@ -31,7 +32,7 @@ function HeaderCarousel() {
         <nav
           style={menuStyle}
           className={`fixed left-0 bg-black text-white z-50 opacity-95 p-6 transition-transform transform ${
-            isOpen ? "translate-x-0" : "-translate-x-full opacity-0 "
+            isOpen ? "translate-x-0" : "-translate-x-full opacity-0  "
           } block opacity-0  sm:bg-transparent sm:text-gold sm:p-0 transition-transform duration-300`}
         >
           <ul
@@ -40,19 +41,22 @@ function HeaderCarousel() {
             }`}
           >
             <li className=" p-2 px-10 hover:bg-gold hover:text-white transition-all duration-500">
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="p-2 px-10 hover:bg-gold hover:text-white transition-all duration-500">
-              <a href="#about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li className="p-2 px-10 hover:bg-gold hover:text-white transition-all duration-500">
-              <a href="#project">Projects</a>
+              <Link to="/director">Director`s message</Link>
             </li>
             <li className="p-2 px-10 hover:bg-gold hover:text-white transition-all duration-500">
-              <a href="#news">News</a>
+              <a href="/projects">Projects</a>
             </li>
             <li className="p-2 px-10 hover:bg-gold hover:text-white transition-all duration-500">
-              <a href="#contact">Contact</a>
+              <a href="/news">News</a>
+            </li>
+            <li className="p-2 px-10 hover:bg-gold hover:text-white transition-all duration-500">
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </nav>

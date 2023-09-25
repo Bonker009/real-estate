@@ -49,7 +49,7 @@ export default function Partner() {
         <h1>
           <span className="text-gold font-semibold">Member</span> of
         </h1>
-        <div className="flex flex-row gap-5 items-center flex-wrap   justify-between">
+        <div className="flex flex-row gap-5 items-center flex-wrap   sm:justify-between justify-center">
           {member.map((item, index) => {
             return (
               <img
