@@ -33,7 +33,7 @@ export default function Service() {
           Our <span className="text-gold font-bold">Service</span>
         </h1>
       </div>
-      <div className="flex flex-col sm:flex-row mt-20 items-center justify-center">{renderItems}</div>
+      <div className="flex flex-col sm:flex-row mt-20 sm:items-start items-center gap-10 justify-center">{renderItems}</div>
     </div>
   );
 }
