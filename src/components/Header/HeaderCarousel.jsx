@@ -1,6 +1,6 @@
 import logo from "../../assets/images/f_logo.png";
 import ham from "../../assets/images/icon/hamburger.png";
-import { Link,  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function HeaderCarousel() {
@@ -31,15 +31,18 @@ function HeaderCarousel() {
         {/* Sidebar Menu */}
         <nav
           style={menuStyle}
-          className={`fixed left-0 bg-black text-white z-50 opacity-95 p-6 transition-transform transform ${
-            isOpen ? "translate-x-0" : "-translate-x-full opacity-0  "
-          } block opacity-0  sm:bg-transparent sm:text-gold sm:p-0 transition-transform duration-300`}
+          className={`fixed left-0 bg-black text-white z-50 opacity-95 p-6 transition-transform  ${
+            isOpen ? "translate-x-0" : "-translate-x-full   "
+          } block opacity-0  sm:bg-transparent sm:text-gold sm:p-0 transition-transform duration-700 ease-in-out`}
         >
           <ul
             className={`flex flex-col  bg-black text-sm sm:text-2xl h-full ${
               !isOpen ? "opacity-0" : ""
             }`}
           >
+            <button onClick={toggleMenu} className="text-right">
+              <span className="p-3 pr-10 text-5xl">X</span>
+            </button>
             <li className=" p-2 px-10 hover:bg-gold hover:text-white transition-all duration-500">
               <Link to="/">Home</Link>
             </li>

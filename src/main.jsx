@@ -6,10 +6,11 @@ import "./index.css";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About/About";
 import ErrorPage from "./components/pages/ErrorPage";
-import Projects from "./components/pages/Projects";
-import News from "./components/News/News";
-import Contact from "./components/Contact";
-import Director from "./components/pages/Director";
+import Projects from "./components/pages/Project_page/Projects";
+
+import Director from "./components/pages/Director/Director";
+import News from "./components/pages/News/New";
+import Contact from "./components/pages/Contact/Contact";
 
 const router = createBrowserRouter([
   {

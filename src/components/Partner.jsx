@@ -56,7 +56,7 @@ export default function Partner() {
                 key={index}
                 src={item.image}
                 alt="member"
-                className=" w-fit h-52 hover:opacity-50 transition-opacity duration-300 ease-in-out "
+                className=" w-fit h-52 hover:opacity-50 transition-opacity duration-300 ease-in-out hover:shadow-2xl"
               />
             );
           })}
@@ -73,7 +73,7 @@ export default function Partner() {
                 key={index}
                 src={item.image}
                 alt="Partner"
-                className=" w-fit h-52 hover:opacity-50 transition-opacity duration-300 ease-in-out "
+                className=" w-fit h-52 hover:opacity-50 transition-opacity duration-300 ease-in-out hover:shadow-2xl"
               />
             );
           })}
